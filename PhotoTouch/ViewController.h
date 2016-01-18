@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolBox/AudioToolBox.h>
 
-@interface ViewController : UIViewController
 
+@interface ViewController : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+{
+    SystemSoundID *mySound;
+}
+
+- (IBAction)addButtonPresses:(id)sender;
 
 @end
 
